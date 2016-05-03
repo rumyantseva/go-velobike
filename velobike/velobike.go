@@ -21,7 +21,13 @@ type Client struct {
 	BaseURL *url.URL
 
 	// Services used for talking to different parts of the API.
-	Parkings *ParkingsService
+	Parkings      *ParkingsService
+	Authorization *AuthorizeService
+	Profile       *ProfileService
+	History       *HistoryService
+
+	// Session ID for authorized user
+	SessionId *string
 }
 
 // NewClient returns a new API client.
@@ -34,6 +40,9 @@ func NewClient(httpClient *http.Client) *Client {
 
 	c := &Client{client: httpClient, BaseURL: baseURL}
 	c.Parkings = &ParkingsService{client: c}
+	c.Authorization = &AuthorizeService{client: c}
+	c.Profile = &ProfileService{client: c}
+	c.History = &HistoryService{client: c}
 
 	return c
 }
@@ -63,6 +72,10 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 	req, err := http.NewRequest(method, u.String(), buf)
 	if err != nil {
 		return nil, err
+	}
+
+	if c.SessionId != nil {
+		req.Header.Add("SessionId", *c.SessionId)
 	}
 
 	return req, nil
@@ -107,4 +120,50 @@ func (c *Client) Do(req *http.Request, v interface{}) (*Response, error) {
 	}
 
 	return response, err
+}
+
+// BasicAuthTransport is an http.RoundTripper that authenticates all requests
+// using HTTP Basic Authentication with the provided username and password.
+type BasicAuthTransport struct {
+	Username string // velobike.ru user id
+	Password string // velobike.ru password
+
+	// Transport is the underlying HTTP transport to use when making requests.
+	// It will default to http.DefaultTransport if nil.
+	Transport http.RoundTripper
+}
+
+// Client returns an *http.Client that makes requests that are authenticated
+// using HTTP Basic Authentication.
+func (t *BasicAuthTransport) Client() *http.Client {
+	return &http.Client{Transport: t}
+}
+
+func (t *BasicAuthTransport) transport() http.RoundTripper {
+	if t.Transport != nil {
+		return t.Transport
+	}
+	return http.DefaultTransport
+}
+
+// RoundTrip implements the RoundTripper interface.
+func (t *BasicAuthTransport) RoundTrip(req *http.Request) (*http.Response, error) {
+	req = cloneRequest(req) // per RoundTrip contract
+	req.SetBasicAuth(t.Username, t.Password)
+
+	return t.transport().RoundTrip(req)
+}
+
+// cloneRequest returns a clone of the provided *http.Request. The clone is a
+// shallow copy of the struct and its Header map.
+func cloneRequest(r *http.Request) *http.Request {
+	// shallow copy of the struct
+	r2 := new(http.Request)
+	*r2 = *r
+	// deep copy of the Header
+	r2.Header = make(http.Header, len(r.Header))
+	for k, s := range r.Header {
+		r2.Header[k] = append([]string(nil), s...)
+	}
+	return r2
 }
