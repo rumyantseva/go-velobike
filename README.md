@@ -12,4 +12,5 @@ An API style based on the best practices of [google/go-github](https://github.co
 * GET /ride/history
 
 ## Roadmap
+* Add electric bikes
 * GET /content/news
