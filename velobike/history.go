@@ -1,14 +1,17 @@
 package velobike
 
+// HistoryService contains history of user's rides.
 type HistoryService struct {
 	client *Client
 }
 
+// History describes the body of ride/history method response.
 type History struct {
 	Items          []HistoryItem `json:"Items,omitempty"`
 	TotalRidesTime *string       `json:"TotalRidesTime,omitempty"`
 }
 
+// HistoryItem describes part of body responsible for a single ride.
 type HistoryItem struct {
 	Id                     *string  `json:"Id,omitempty"`
 	Type                   *string  `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
@@ -20,6 +23,7 @@ type HistoryItem struct {
 	Time                   *string  `json:"Time,omitempty"`                   // Only for type "Ride"
 }
 
+// Get returns user's history.
 // Use this method only for authorized users.
 // Please, see an example.
 func (s *HistoryService) Get() (*History, *Response, error) {

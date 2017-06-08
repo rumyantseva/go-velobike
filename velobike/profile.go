@@ -1,9 +1,11 @@
 package velobike
 
+// ProfileService  is a service to deal with user's profile.
 type ProfileService struct {
 	client *Client
 }
 
+// Profile describes profile method response body.
 type Profile struct {
 	UserId                *string  `json:"UserId,omitempty"`
 	Email                 *string  `json:"Email,omitempty"`
@@ -22,6 +24,7 @@ type Profile struct {
 	TariffEnd             *string  `json:"TariffEnd,omitempty"`
 }
 
+// Get returns a profile of the current user.
 // Use this method only for authorized users.
 // Please, see an example.
 func (s *ProfileService) Get() (*Profile, *Response, error) {
