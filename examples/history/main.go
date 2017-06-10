@@ -48,9 +48,12 @@ func main() {
 			fmt.Printf("Price: %f\n", *item.Price)
 
 			if *item.Type == "Ride" {
-				fmt.Printf("Time: %s\n", *item.Time)
+				fmt.Printf("Time: %s/Duration: %s\n", *item.Time, *item.Duration)
+				fmt.Printf("EndDate: %s\n", *item.EndDate)
 				fmt.Printf("StartBikeParkingNumber: %s\n", *item.StartBikeParkingNumber)
 				fmt.Printf("EndBikeParkingNumber: %s\n", *item.EndBikeParkingNumber)
+				fmt.Printf("BikeID: %s\n", *item.BikeID)
+				fmt.Printf("Distance: %d meters\n", *item.Distance)
 			}
 		}
 

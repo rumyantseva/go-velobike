@@ -17,10 +17,15 @@ type HistoryItem struct {
 	Type                   *string  `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
 	Price                  *float64 `json:"Price,omitempty"`
 	Rejected               *bool    `json:"Rejected,omitempty"`
-	StartDate              *string  `json:"StartDate,omitempty"`
+	StartDate              *string  `json:"StartDate,omitempty"`              // layout: 2006-01-02T15:04:05
 	StartBikeParkingNumber *string  `json:"StartBikeParkingNumber,omitempty"` // Only for type "Ride"
 	EndBikeParkingNumber   *string  `json:"EndBikeParkingNumber,omitempty"`   // Only for type "Ride"
 	Time                   *string  `json:"Time,omitempty"`                   // Only for type "Ride"
+	BikeID                 *string  `json:"BikeId,omitempty"`                 // Only for type "Ride"
+	EndDate                *string  `json:"EndDate,omitempty"`                // Only for type "Ride", layout: 2006-01-02T15:04:05
+	Distance               *int     `json:"CoveredDistance,omitempty"`        // Only for type "Ride", in meters
+	// Duration is always 5-10 seconds less than Time. I suspect it represents Time minus time needed to lock/unlock the bike.
+	Duration *string `json:"Duration"`
 }
 
 // Get returns user's history.
