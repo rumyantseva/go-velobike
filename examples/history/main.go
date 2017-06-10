@@ -44,19 +44,34 @@ func main() {
 	} else {
 		for _, item := range history.Items {
 			fmt.Printf("\nType: %s\n", *item.Type)
+			fmt.Printf("ID: %s\n", *item.Id)
 			fmt.Printf("Date: %s\n", *item.StartDate)
 			fmt.Printf("Price: %f\n", *item.Price)
+			fmt.Printf("Rejected: %v\n", *item.Rejected)
 
 			if *item.Type == "Ride" {
-				fmt.Printf("Time: %s/Duration: %s\n", *item.Time, *item.Duration)
+				fmt.Printf("BikeID: %s\n", *item.BikeID)
+				fmt.Printf("BikeType: %s\n", *item.BikeType)
+				fmt.Printf("Time: %s\n", *item.Time)
+				fmt.Printf("Duration: %s\n", *item.Duration)
 				fmt.Printf("EndDate: %s\n", *item.EndDate)
 				fmt.Printf("StartBikeParkingNumber: %s\n", *item.StartBikeParkingNumber)
+				fmt.Printf("StartBikeParkingName: %s\n", *item.StartBikeParkingName)
+				fmt.Printf("StartBikeParkingAddress: %s\n", *item.StartBikeParkingAddress)
+				fmt.Printf("StartBikeSlotNumber: %s\n", *item.StartBikeSlotNumber)
 				fmt.Printf("EndBikeParkingNumber: %s\n", *item.EndBikeParkingNumber)
-				fmt.Printf("BikeID: %s\n", *item.BikeID)
+				fmt.Printf("EndBikeParkingName: %s\n", *item.EndBikeParkingName)
+				fmt.Printf("EndBikeParkingAddress: %s\n", *item.EndBikeParkingAddress)
+				fmt.Printf("EndBikeSlotNumber: %s\n", *item.EndBikeSlotNumber)
 				fmt.Printf("Distance: %d meters\n", *item.Distance)
+				fmt.Printf("Text: %s\n", *item.Text)
+			} else if *item.Type == "Pay" {
+				fmt.Printf("Contract: %s\n", *item.Contract)
+				fmt.Printf("Status: %s\n", *item.Status)
+				fmt.Printf("PanMask: %s\n", *item.PanMask)
 			}
 		}
 
-		fmt.Printf("Total Rides Time: %s\n", *history.TotalRidesTime)
+		fmt.Printf("\nTotal Rides Time: %s\n", *history.TotalRidesTime)
 	}
 }

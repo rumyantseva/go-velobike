@@ -13,19 +13,36 @@ type History struct {
 
 // HistoryItem describes part of body responsible for a single ride.
 type HistoryItem struct {
-	Id                     *string  `json:"Id,omitempty"`
-	Type                   *string  `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
-	Price                  *float64 `json:"Price,omitempty"`
-	Rejected               *bool    `json:"Rejected,omitempty"`
-	StartDate              *string  `json:"StartDate,omitempty"`              // layout: 2006-01-02T15:04:05
-	StartBikeParkingNumber *string  `json:"StartBikeParkingNumber,omitempty"` // Only for type "Ride"
-	EndBikeParkingNumber   *string  `json:"EndBikeParkingNumber,omitempty"`   // Only for type "Ride"
-	Time                   *string  `json:"Time,omitempty"`                   // Only for type "Ride"
-	BikeID                 *string  `json:"BikeId,omitempty"`                 // Only for type "Ride"
-	EndDate                *string  `json:"EndDate,omitempty"`                // Only for type "Ride", layout: 2006-01-02T15:04:05
-	Distance               *int     `json:"CoveredDistance,omitempty"`        // Only for type "Ride", in meters
+	Type *string `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
+
+	// Fields common for both "Ride" and "Pay" types
+	Id        *string  `json:"Id,omitempty"`
+	Price     *float64 `json:"Price,omitempty"`
+	Rejected  *bool    `json:"Rejected,omitempty"`
+	StartDate *string  `json:"StartDate,omitempty"` // layout: 2006-01-02T15:04:05
+
+	// Fields available only for "Ride" type
+	BikeID                  *string `json:"BikeId,omitempty"`
+	BikeType                *string `json:"BikeType,omitempty"`
+	EndDate                 *string `json:"EndDate,omitempty"`
+	StartBikeParkingNumber  *string `json:"StartBikeParkingNumber,omitempty"`
+	StartBikeParkingName    *string `json:"StartBikeParkingName,omitempty"`
+	StartBikeParkingAddress *string `json:"StartBikeParkingAddress,omitempty"`
+	StartBikeSlotNumber     *string `json:"StartBikeSlotNumber,omitempty"`
+	EndBikeParkingNumber    *string `json:"EndBikeParkingNumber,omitempty"`
+	EndBikeParkingName      *string `json:"EndBikeParkingName,omitempty"`
+	EndBikeParkingAddress   *string `json:"EndBikeParkingAddress,omitempty"`
+	EndBikeSlotNumber       *string `json:"EndBikeSlotNumber,omitempty"`
+	Time                    *string `json:"Time,omitempty"`
 	// Duration is always 5-10 seconds less than Time. I suspect it represents Time minus time needed to lock/unlock the bike.
 	Duration *string `json:"Duration"`
+	Distance *int    `json:"CoveredDistance,omitempty"`
+	Text     *string `json:"Text,omitempty"`
+
+	// Fields available only for "Pay" type
+	Contract *string `json:"Contract,omitempty"`
+	Status   *string `json:"Status,omitempty"`
+	PanMask  *string `json:"PanMask,omitempty"`
 }
 
 // Get returns user's history.
