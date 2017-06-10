@@ -6,7 +6,8 @@ API style based on the best practices of [google/go-github](https://github.com/g
 
 ## Versioning
 
-Current major version is 0.x.x.
+Semantic versioning: Marjor.Minor.Patch.
+Current version is 0.x.x.
 
 There are [few warnings from go linter](https://github.com/rumyantseva/go-velobike/issues/2) here. I'd like to fix these warnings, but it'll break backward compatibility. So, these changes are planned for the next major version of the library.
 
