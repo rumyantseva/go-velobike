@@ -1,5 +1,8 @@
 # go-velobike
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/rumyantseva/go-velobike)](https://goreportcard.com/report/github.com/rumyantseva/go-velobike)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rumyantseva/go-velobike/issues)
+
 This is an unofficial Go client library to deal with REST API of velobike.ru project
 
 Client style based on the best practices of [google/go-github](https://github.com/google/go-github).
@@ -28,8 +31,8 @@ Contributors are welcome! Feel free to improve this project or share you ideas v
 
 Contributors (unsorted):
 
-- Elena Grahovac [@rumyantseva](https://github.com/rumyantseva)
-- Pavel Borzenkov [@pborzenkov](https://github.com/pborzenkov)
+- Elena Grahovac: [@rumyantseva](https://github.com/rumyantseva)
+- Pavel Borzenkov: [@pborzenkov](https://github.com/pborzenkov)
 
 
 ## Roadmap
