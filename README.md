@@ -28,7 +28,7 @@ If you have any questions, feel free to [create an issue](https://github.com/rum
 
 ## Contributing
 
-Contributors are welcome! Feel free to improve this project or share you ideas via [issues](https://github.com/rumyantseva/go-velobike/issues).
+Contributors are welcome! Feel free to improve this project or share your ideas via [issues](https://github.com/rumyantseva/go-velobike/issues).
 
 Contributors (unsorted):
 
