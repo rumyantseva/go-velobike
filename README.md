@@ -1,8 +1,8 @@
 # go-velobike
 
-A Go client library for the API of the velobike.ru project.
+This is an unofficial Go client library to deal with REST API of velobike.ru project
 
-API style based on the best practices of [google/go-github](https://github.com/google/go-github).
+Client style based on the best practices of [google/go-github](https://github.com/google/go-github).
 
 ## Versioning
 
@@ -21,6 +21,16 @@ If you have any questions, feel free to [create an issue](https://github.com/rum
 * POST /profile/authorize
 * GET /ride/parkings
 * GET /ride/history
+
+## Contributing
+
+Contributors are welcome! Feel free to improve this project or share you ideas via [issues](https://github.com/rumyantseva/go-velobike/issues).
+
+Contributors (unsorted):
+
+- Elena Grahovac [@rumyantseva](https://github.com/rumyantseva)
+- Pavel Borzenkov [@pborzenkov](https://github.com/pborzenkov)
+
 
 ## Roadmap
 
