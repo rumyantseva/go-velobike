@@ -13,7 +13,7 @@ Client style based on the best practices of [google/go-github](https://github.co
 Semantic versioning: Marjor.Minor.Patch.
 Current version is 0.x.x.
 
-There are [few warnings from go linter](https://github.com/rumyantseva/go-velobike/issues/2) here. I'd like to fix these warnings, but it'll break backward compatibility. So, these changes are planned for the next major version of the library. Other issues might break back compatibility too, please check [1.0.0 milestone](https://github.com/rumyantseva/go-velobike/milestone/3) to find more information.
+There may be open issues that break backwards compatibility, please check [1.0.0 milestone](https://github.com/rumyantseva/go-velobike/milestone/3) to find more information.
 
 If you use this library, please vendor it using a package management tool to not to have backward compatibility problems in the future. 
 
