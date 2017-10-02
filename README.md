@@ -15,7 +15,7 @@ Current version is 0.x.x.
 
 There may be open issues that break backwards compatibility, please check [1.0.0 milestone](https://github.com/rumyantseva/go-velobike/milestone/3) to find more information.
 
-If you use this library, please vendor it using a package management tool to not to have backward compatibility problems in the future. 
+If you use this library, please vendor it using a package management tool to not to have backward compatibility problems in the future.
 
 If you have any questions, feel free to [create an issue](https://github.com/rumyantseva/go-velobike/issues/new), I'll try to answer as soon as possible.
 
@@ -32,9 +32,8 @@ Contributors are welcome! Feel free to improve this project or share your ideas 
 
 Contributors (unsorted):
 
-- Elena Grahovac: [@rumyantseva](https://github.com/rumyantseva)
-- Pavel Borzenkov: [@pborzenkov](https://github.com/pborzenkov)
-
+* Elena Grahovac: [@rumyantseva](https://github.com/rumyantseva)
+* Pavel Borzenkov: [@pborzenkov](https://github.com/pborzenkov)
 
 ## Roadmap
 
