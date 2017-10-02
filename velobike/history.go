@@ -16,7 +16,7 @@ type HistoryItem struct {
 	Type *string `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
 
 	// Fields common for both "Ride" and "Pay" types
-	Id        *string  `json:"Id,omitempty"`
+	ID        *string  `json:"Id,omitempty"`
 	Price     *float64 `json:"Price,omitempty"`
 	Rejected  *bool    `json:"Rejected,omitempty"`
 	StartDate *string  `json:"StartDate,omitempty"` // layout: 2006-01-02T15:04:05

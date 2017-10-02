@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	baseUrl = "http://apivelobike.velobike.ru"
+	baseURL = "http://apivelobike.velobike.ru"
 )
 
 // A Client manages communication with the API.
@@ -27,7 +27,7 @@ type Client struct {
 	History       *HistoryService
 
 	// Session ID for authorized user
-	SessionId *string
+	SessionID *string
 }
 
 // NewClient returns a new API client.
@@ -36,7 +36,7 @@ func NewClient(httpClient *http.Client) *Client {
 	if httpClient == nil {
 		httpClient = http.DefaultClient
 	}
-	baseURL, _ := url.Parse(baseUrl)
+	baseURL, _ := url.Parse(baseURL)
 
 	c := &Client{client: httpClient, BaseURL: baseURL}
 	c.Parkings = &ParkingsService{client: c}
@@ -74,8 +74,8 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 		return nil, err
 	}
 
-	if c.SessionId != nil {
-		req.Header.Add("SessionId", *c.SessionId)
+	if c.SessionID != nil {
+		req.Header.Add("SessionID", *c.SessionID)
 	}
 
 	return req, nil
