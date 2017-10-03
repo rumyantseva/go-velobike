@@ -7,19 +7,19 @@ type ProfileService struct {
 
 // Profile describes profile method response body.
 type Profile struct {
-	UserId                *string  `json:"UserId,omitempty"`
+	UserID                *string  `json:"UserId,omitempty"`
 	Email                 *string  `json:"Email,omitempty"`
 	PhoneNumber           *string  `json:"PhoneNumber,omitempty"`
 	RegisterDate          *string  `json:"RegisterDate,omitempty"`
 	FirstName             *string  `json:"FirstName,omitempty"`
 	LastName              *string  `json:"LastName,omitempty"`
-	AvatarUrl             *string  `json:"AvatarUrl,omitempty"`
+	AvatarURL             *string  `json:"AvatarUrl,omitempty"`
 	TroikaCardNumber      *string  `json:"TroikaCardNumber,omitempty"`
 	TroikaPrintCardNumber *string  `json:"TroikaPrintCardNumber,omitempty"`
 	Balance               *float64 `json:"Balance,omitempty"`
 	Holded                *bool    `json:"Holded,omitempty"`
 	HoldedAmount          *float64 `json:"HoldedAmount,omitempty"`
-	TariffId              *string  `json:"TariffId,omitempty"`
+	TariffID              *string  `json:"TariffId,omitempty"`
 	TariffStart           *string  `json:"TariffStart,omitempty"`
 	TariffEnd             *string  `json:"TariffEnd,omitempty"`
 }

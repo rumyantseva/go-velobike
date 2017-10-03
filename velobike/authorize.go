@@ -8,7 +8,7 @@ type AuthorizeService struct {
 
 // Authorization describes the body of profile/authorize method response.
 type Authorization struct {
-	SessionId *string `json:"SessionId,omitempty"`
+	SessionID *string `json:"SessionId,omitempty"`
 }
 
 // Authorize method authorizes user and get receives token.

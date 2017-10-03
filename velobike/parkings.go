@@ -14,7 +14,7 @@ type Parkings struct {
 type Parking struct {
 	Address     *string   `json:"Address,omitempty"`
 	FreePlaces  *int      `json:"FreePlaces,omitempty"`
-	Id          *string   `json:"Id,omitempty"`
+	ID          *string   `json:"Id,omitempty"`
 	IsFavourite *bool     `json:"IsFavourite,omitempty"`
 	IsLocked    *bool     `json:"IsLocked,omitempty"`
 	Position    *Position `json:"Position,omitempty"`
