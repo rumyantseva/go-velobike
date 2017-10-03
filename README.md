@@ -11,9 +11,7 @@ Client style based on the best practices of [google/go-github](https://github.co
 ## Versioning
 
 Semantic versioning: Marjor.Minor.Patch.
-Current version is 0.x.x.
-
-There may be open issues that break backwards compatibility, please check [1.0.0 milestone](https://github.com/rumyantseva/go-velobike/milestone/3) to find more information.
+Current version is 2.x.x.
 
 If you use this library, please vendor it using a package management tool to not to have backward compatibility problems in the future.
 
@@ -34,6 +32,7 @@ Contributors (unsorted):
 
 * Elena Grahovac: [@rumyantseva](https://github.com/rumyantseva)
 * Pavel Borzenkov: [@pborzenkov](https://github.com/pborzenkov)
+* Bill Glover: [@billglover](https://github.com/billglover)
 
 ## Roadmap
 
