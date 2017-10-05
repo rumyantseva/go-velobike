@@ -33,7 +33,7 @@ func main() {
 		return
 	}
 
-	client.SessionId = auth.SessionId
+	client.SessionID = auth.SessionID
 
 	fmt.Printf("\nThe list of your velobike.ru events:\n")
 
@@ -44,7 +44,7 @@ func main() {
 	} else {
 		for _, item := range history.Items {
 			fmt.Printf("\nType: %s\n", *item.Type)
-			fmt.Printf("ID: %s\n", *item.Id)
+			fmt.Printf("ID: %s\n", *item.ID)
 			fmt.Printf("Date: %s\n", *item.StartDate)
 			fmt.Printf("Price: %f\n", *item.Price)
 			fmt.Printf("Rejected: %v\n", *item.Rejected)
