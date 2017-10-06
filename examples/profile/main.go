@@ -34,15 +34,15 @@ func main() {
 		return
 	}
 
-	client.SessionId = auth.SessionId
+	client.SessionID = auth.SessionID
 
-	// If we set client.SessionId we can use "only authorized" methods:
+	// If we set client.SessionID we can use "only authorized" methods:
 	profile, _, err := client.Profile.Get()
 
 	if err != nil {
 		fmt.Printf("error: %v\n\n", err)
 	} else {
-		fmt.Printf("\nUser ID: %s\n", *profile.UserId)
+		fmt.Printf("\nUser ID: %s\n", *profile.UserID)
 		fmt.Printf("Email: %s\n", *profile.Email)
 	}
 }

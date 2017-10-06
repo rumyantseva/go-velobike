@@ -33,6 +33,6 @@ func main() {
 		return
 	}
 
-	client.SessionId = auth.SessionId
-	fmt.Printf("Session ID: %s\n", *client.SessionId)
+	client.SessionID = auth.SessionID
+	fmt.Printf("Session ID: %s\n", *client.SessionID)
 }

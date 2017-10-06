@@ -34,7 +34,7 @@ func main() {
 		return
 	}
 
-	client.SessionId = auth.SessionId
+	client.SessionID = auth.SessionID
 
 	fmt.Printf("\nThe list of your favourite parkings:\n")
 
