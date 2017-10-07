@@ -11,7 +11,7 @@ Client style based on the best practices of [google/go-github](https://github.co
 
 ## Versioning
 
-Semantic versioning: Marjor.Minor.Patch.
+Semantic versioning: Major.Minor.Patch.
 Current version is 2.x.x.
 
 If you use this library, please vendor it using a package management tool to not to have backward compatibility problems in the future.
