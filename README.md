@@ -33,6 +33,7 @@ Contributors (unsorted):
 * Elena Grahovac: [@rumyantseva](https://github.com/rumyantseva)
 * Pavel Borzenkov: [@pborzenkov](https://github.com/pborzenkov)
 * Bill Glover: [@billglover](https://github.com/billglover)
+* [jainnidhi703](https://github.com/jainnidhi703)
 
 ## Roadmap
 
