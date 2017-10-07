@@ -2,6 +2,7 @@
 
 [![GoDoc](https://godoc.org/github.com/rumyantseva/go-velobike/velobike?status.svg)](https://godoc.org/github.com/rumyantseva/go-velobike/velobike)
 [![Go Report Card](https://goreportcard.com/badge/github.com/rumyantseva/go-velobike)](https://goreportcard.com/report/github.com/rumyantseva/go-velobike)
+[![Build Status](https://travis-ci.org/rumyantseva/go-velobike.svg?branch=master)](https://travis-ci.org/rumyantseva/go-velobike)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rumyantseva/go-velobike/issues)
 
 This is an unofficial Go client library to deal with REST API of velobike.ru project
