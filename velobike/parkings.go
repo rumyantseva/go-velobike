@@ -12,13 +12,20 @@ type Parkings struct {
 
 // Parking describes part of body responsible for a single parking.
 type Parking struct {
-	Address     *string   `json:"Address,omitempty"`
-	FreePlaces  *int      `json:"FreePlaces,omitempty"`
-	ID          *string   `json:"Id,omitempty"`
-	IsFavourite *bool     `json:"IsFavourite,omitempty"`
-	IsLocked    *bool     `json:"IsLocked,omitempty"`
-	Position    *Position `json:"Position,omitempty"`
-	TotalPlaces *int      `json:"TotalPlaces,omitempty"`
+	Address             *string   `json:"Address,omitempty"`
+	FreeElectricPlaces  *int      `json:"FreeElectricPlaces,omitempty"`
+	FreeOrdinaryPlaces  *int      `json:"FreeOrdinaryPlaces,omitempty"`
+	FreePlaces          *int      `json:"FreePlaces,omitempty"`
+	HasTerminal         *bool     `json:"HasTerminal,omitempty"`
+	ID                  *string   `json:"Id,omitempty"`
+	IsFavourite         *bool     `json:"IsFavourite,omitempty"`
+	IsLocked            *bool     `json:"IsLocked,omitempty"`
+	Name                *string   `json:"Name,omitempty"`
+	Position            *Position `json:"Position,omitempty"`
+	StationTypes        []string  `json:"StationTypes,omitempty"`
+	TotalElectricPlaces *int      `json:"TotalElectricPlaces,omitempty"`
+	TotalOrdinaryPlaces *int      `json:"TotalOrdinaryPlaces,omitempty"`
+	TotalPlaces         *int      `json:"TotalPlaces,omitempty"`
 }
 
 // Position describes parking's geo location.
