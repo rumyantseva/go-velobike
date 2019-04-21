@@ -122,7 +122,10 @@ func (c *Client) Do(req *http.Request, v interface{}) (*Response, error) {
 
 	if v != nil {
 		if w, ok := v.(io.Writer); ok {
-			io.Copy(w, &buf)
+			_, err = io.Copy(w, &buf)
+			if err != nil {
+				return response, err
+			}
 		} else {
 			err = json.NewDecoder(&buf).Decode(v)
 			if err == io.EOF {
