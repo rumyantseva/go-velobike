@@ -75,6 +75,8 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 		return nil, err
 	}
 
+	req.Header.Add("App-Version", "1.3")
+
 	if c.SessionID != nil {
 		req.Header.Add("SessionID", *c.SessionID)
 	}
