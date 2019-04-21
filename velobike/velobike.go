@@ -3,6 +3,7 @@ package velobike
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"net/url"
@@ -108,11 +109,20 @@ func (c *Client) Do(req *http.Request, v interface{}) (*Response, error) {
 
 	response := newResponse(resp)
 
+	// use buffer with TeeReader to duplicate a response body stream
+	var buf bytes.Buffer
+	body := io.TeeReader(resp.Body, &buf)
+
+	err = CheckResponse(resp, body)
+	if err != nil {
+		return response, err
+	}
+
 	if v != nil {
 		if w, ok := v.(io.Writer); ok {
-			io.Copy(w, resp.Body)
+			io.Copy(w, &buf)
 		} else {
-			err = json.NewDecoder(resp.Body).Decode(v)
+			err = json.NewDecoder(&buf).Decode(v)
 			if err == io.EOF {
 				err = nil // ignore EOF errors caused by empty response body
 			}
@@ -166,4 +176,39 @@ func cloneRequest(r *http.Request) *http.Request {
 		r2.Header[k] = append([]string(nil), s...)
 	}
 	return r2
+}
+
+// ErrorResponse indicates an error caused by an API request.
+type ErrorResponse struct {
+	Code             string `json:"code"`
+	ExtCode          int    `json:"extCode"`
+	LocalizedMessage string `json:"localizedMessage"`
+	Message          string `json:"message"`
+	Response         *http.Response
+}
+
+// Error implements an error interface.
+func (e *ErrorResponse) Error() string {
+	return fmt.Sprintf("%v %v: %s %d %s",
+		e.Response.Request.Method, e.Response.Request.URL,
+		e.Code, e.ExtCode, e.Message,
+	)
+}
+
+// CheckResponse checks response headers and a copied stream of the body.
+func CheckResponse(r *http.Response, teedBody io.Reader) error {
+	if r.StatusCode != http.StatusOK {
+		return fmt.Errorf("%v %v: %s",
+			r.Request.Method, r.Request.URL, r.Status,
+		)
+	}
+
+	var er ErrorResponse
+	err := json.NewDecoder(teedBody).Decode(&er)
+	if err == nil && er.Code != "" {
+		er.Response = r
+		return &er
+	}
+
+	return nil
 }
