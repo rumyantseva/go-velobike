@@ -7,7 +7,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/rumyantseva/go-velobike/v3/velobike"
+	"github.com/rumyantseva/go-velobike/v4/velobike"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
@@ -26,7 +26,9 @@ func main() {
 		Password: strings.TrimSpace(password),
 	}
 
-	client := velobike.NewClient(tp.Client())
+	client := velobike.NewClient(
+		velobike.WithHTTPClient(tp.Client()),
+	)
 	auth, _, err := client.Authorization.Authorize()
 
 	if err != nil {
