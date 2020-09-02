@@ -1,7 +1,5 @@
 package velobike
 
-import "time"
-
 // HistoryService contains history of user's rides.
 type HistoryService struct {
 	client *Client
@@ -18,10 +16,10 @@ type HistoryItem struct {
 	Type *string `json:"Type,omitempty"` // Possible types: "Ride", "Pay"
 
 	// Fields common for both "Ride" and "Pay" types
-	ID        *string    `json:"Id,omitempty"`
-	Price     *float64   `json:"Price,omitempty"`
-	Rejected  *bool      `json:"Rejected,omitempty"`
-	StartDate *time.Time `json:"StartDate,omitempty"` // layout: 2006-01-02T15:04:05
+	ID        *string  `json:"Id,omitempty"`
+	Price     *float64 `json:"Price,omitempty"`
+	Rejected  *bool    `json:"Rejected,omitempty"`
+	StartDate *string  `json:"StartDate,omitempty"` // layout: 2006-01-02T15:04:05
 
 	// Fields available only for "Ride" type
 	BikeID                  *string `json:"BikeId,omitempty"`
