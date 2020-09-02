@@ -7,7 +7,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/rumyantseva/go-velobike/velobike"
+	"github.com/rumyantseva/go-velobike/v3/velobike"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

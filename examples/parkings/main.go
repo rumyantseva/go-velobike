@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/rumyantseva/go-velobike/velobike"
+	"github.com/rumyantseva/go-velobike/v3/velobike"
 )
 
 func main() {
