@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/rumyantseva/go-velobike/v3/velobike"
+	"github.com/rumyantseva/go-velobike/v4/velobike"
 )
 
 func main() {
-	client := velobike.NewClient(nil)
+	client := velobike.NewClient()
 
 	fmt.Println("The list of the velobike.ru stations:")
 

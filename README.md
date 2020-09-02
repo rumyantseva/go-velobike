@@ -29,7 +29,8 @@ If you have any questions, feel free to [create an issue](https://github.com/rum
 
 Contributors are welcome! Feel free to improve this project or share your ideas via [issues](https://github.com/rumyantseva/go-velobike/issues).
 
-Thanks everyone [who has contributed](https://github.com/rumyantseva/go-velobike/graphs/contributors) to the project! I appreciate every pull request ❤️
+Thanks everyone [who has contributed](https://github.com/rumyantseva/go-velobike/graphs/contributors) to the project!
+Every pull request is highly appreciated! ❤️
 
 ## Roadmap
 

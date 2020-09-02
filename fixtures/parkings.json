@@ -1,0 +1,379 @@
+{
+  "Items": [
+    {
+      "FreeOrdinaryPlaces": 4,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0001",
+      "Position": {
+        "Lat": 55.7449006,
+        "Lon": 37.6020183
+      },
+      "FreePlaces": 4,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0441\u0442. \u043c. \u041a\u0440\u043e\u043f\u043e\u0442\u043a\u0438\u043d\u0441\u043a\u0430\u044f (\u0432\u044b\u0445\u043e\u0434 \u043a \u0413\u043e\u0433\u043e\u043b\u0435\u0432\u0441\u043a\u043e\u043c\u0443 \u0431\u0443\u043b\u044c\u0432\u0430\u0440\u0443)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 9
+    },
+    {
+      "FreeOrdinaryPlaces": 5,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0387",
+      "Position": {
+        "Lat": 55.6337498,
+        "Lon": 37.5205529
+      },
+      "FreePlaces": 5,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u041f\u0440\u043e\u0444\u0441\u043e\u044e\u0437\u043d\u0430\u044f, \u0434.109, \u0412\u0441.1 (\u0441\u0442. \u043c. \u041a\u043e\u043d\u044c\u043a\u043e\u0432\u043e, \u0432\u044b\u0445\u043e\u0434 \u211610)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 8
+    },
+    {
+      "FreeOrdinaryPlaces": 5,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0405",
+      "Position": {
+        "Lat": 55.7812396,
+        "Lon": 37.59239
+      },
+      "FreePlaces": 5,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u041d\u043e\u0432\u043e\u043b\u0435\u0441\u043d\u0430\u044f, \u0434.1/49",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 9
+    },
+    {
+      "FreeOrdinaryPlaces": 9,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0411",
+      "Position": {
+        "Lat": 55.7817849,
+        "Lon": 37.6144726
+      },
+      "FreePlaces": 9,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 18,
+      "TotalPlaces": 18,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u0421\u0435\u043b\u0435\u0437\u043d\u0451\u0432\u0441\u043a\u0430\u044f, \u0434.29, \u0441\u0442\u0440.1 (\u0441\u0442. \u043c. \u0414\u043e\u0441\u0442\u043e\u0435\u0432\u0441\u043a\u0430\u044f)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 9
+    },
+    {
+      "FreeOrdinaryPlaces": 9,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0413",
+      "Position": {
+        "Lat": 55.7896632,
+        "Lon": 37.6044645
+      },
+      "FreePlaces": 9,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u041d\u043e\u0432\u043e\u0441\u0443\u0449\u0451\u0432\u0441\u043a\u0430\u044f, \u0434.22, \u0441\u0442\u0440.8",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 3
+    },
+    {
+      "FreeOrdinaryPlaces": 8,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0414",
+      "Position": {
+        "Lat": 55.78921,
+        "Lon": 37.609836
+      },
+      "FreePlaces": 8,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u041e\u0431\u0440\u0430\u0437\u0446\u043e\u0432\u0430, \u0434.19\u0410",
+      "AvailableElectricBikes": 1,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 3
+    },
+    {
+      "FreeOrdinaryPlaces": 4,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0003",
+      "Position": {
+        "Lat": 55.7509180556,
+        "Lon": 37.6005927778
+      },
+      "FreePlaces": 4,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 12,
+      "TotalPlaces": 12,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0413\u043e\u0433\u043e\u043b\u0435\u0432\u0441\u043a\u0438\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.33)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 9
+    },
+    {
+      "FreeOrdinaryPlaces": 19,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0007",
+      "Position": {
+        "Lat": 55.7574181,
+        "Lon": 37.6086772
+      },
+      "FreePlaces": 19,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 30,
+      "TotalPlaces": 30,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0413\u0430\u0437\u0435\u0442\u043d\u044b\u0439 \u043f\u0435\u0440., \u0434.6",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 13
+    },
+    {
+      "FreeOrdinaryPlaces": 11,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0008",
+      "Position": {
+        "Lat": 55.761072,
+        "Lon": 37.601473
+      },
+      "FreePlaces": 11,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 14,
+      "TotalPlaces": 14,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0422\u0432\u0435\u0440\u0441\u043a\u043e\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.17, \u0441\u0442\u0440.1)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 3
+    },
+    {
+      "FreeOrdinaryPlaces": 16,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0009",
+      "Position": {
+        "Lat": 55.7646115,
+        "Lon": 37.6052356
+      },
+      "FreePlaces": 16,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 20,
+      "TotalPlaces": 20,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0422\u0432\u0435\u0440\u0441\u043a\u043e\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.28)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 5
+    },
+    {
+      "FreeOrdinaryPlaces": 13,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0010",
+      "Position": {
+        "Lat": 55.7667105556,
+        "Lon": 37.6094894444
+      },
+      "FreePlaces": 13,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 14,
+      "TotalPlaces": 14,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0421\u0442\u0440\u0430\u0441\u0442\u043d\u043e\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.8\u0410)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 1
+    },
+    {
+      "FreeOrdinaryPlaces": 7,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0016",
+      "Position": {
+        "Lat": 55.7599141,
+        "Lon": 37.6316201
+      },
+      "FreePlaces": 7,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 10,
+      "TotalPlaces": 10,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0443\u043b. \u041c\u044f\u0441\u043d\u0438\u0446\u043a\u0430\u044f, \u0434.10",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 3
+    },
+    {
+      "FreeOrdinaryPlaces": 11,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0018",
+      "Position": {
+        "Lat": 55.760381,
+        "Lon": 37.645665
+      },
+      "FreePlaces": 11,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 14,
+      "TotalPlaces": 14,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0427\u0438\u0441\u0442\u043e\u043f\u0440\u0443\u0434\u043d\u044b\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.12, \u0441\u0442\u0440.1)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 4
+    },
+    {
+      "FreeOrdinaryPlaces": 0,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0021",
+      "Position": {
+        "Lat": 55.7533283333,
+        "Lon": 37.6473502778
+      },
+      "FreePlaces": 0,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 8,
+      "TotalPlaces": 8,
+      "TotalElectricPlaces": 0,
+      "Address": "\u041f\u043e\u043a\u0440\u043e\u0432\u0441\u043a\u0438\u0439 \u0431-\u0440 (\u043d\u0430\u043f\u0440\u043e\u0442\u0438\u0432 \u0434.18, \u0441\u0442\u0440.18)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 8
+    },
+    {
+      "FreeOrdinaryPlaces": 5,
+      "IconsSet": 1,
+      "Name": "",
+      "StationTypes": [
+        "ordinary"
+      ],
+      "TemplateId": 6,
+      "Id": "0013",
+      "Position": {
+        "Lat": 55.7598405,
+        "Lon": 37.6257601
+      },
+      "FreePlaces": 5,
+      "FreeElectricPlaces": 0,
+      "IsLocked": false,
+      "TotalOrdinaryPlaces": 14,
+      "TotalPlaces": 14,
+      "TotalElectricPlaces": 0,
+      "Address": "\u0422\u0435\u0430\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440., \u0434.5, \u0441\u0442\u0440.1 (\u0441\u0442. \u043c. \u041b\u0443\u0431\u044f\u043d\u043a\u0430)",
+      "AvailableElectricBikes": 0,
+      "HasTerminal": false,
+      "IsFavourite": false,
+      "AvailableOrdinaryBikes": 10
+    }
+  ]
+}
