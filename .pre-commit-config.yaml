@@ -1,6 +1,13 @@
--   repo: git://github.com/dnephin/pre-commit-golang
-    sha: 471a7c123ea7a3b776ff018edf00066947873a94
-    hooks:
-    -   id: go-fmt
-    -   id: go-vet
-    -   id: go-lint
+repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v3.2.0
+        hooks:
+            -   id: check-yaml
+            -   id: check-json
+            -   id: end-of-file-fixer
+            -   id: trailing-whitespace
+    -   repo: git://github.com/dnephin/pre-commit-golang
+        rev: v0.3.5
+        hooks:
+            -   id: go-imports
+            -   id: golangci-lint
