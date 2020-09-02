@@ -9,10 +9,6 @@ import (
 	"net/url"
 )
 
-const (
-	baseURL = "http://apivelobike.velobike.ru"
-)
-
 // A Client manages communication with the API.
 type Client struct {
 	// HTTP client used to communicate with the API.
@@ -33,13 +29,21 @@ type Client struct {
 
 // NewClient returns a new API client.
 // If a nil httpClient is provided, http.DefaultClient will be used.
-func NewClient(httpClient *http.Client) *Client {
-	if httpClient == nil {
-		httpClient = http.DefaultClient
+func NewClient(opts ...ClientOption) *Client {
+	o := &ClientOptions{}
+	for _, opt := range opts {
+		opt(o)
 	}
-	baseURL, _ := url.Parse(baseURL)
 
-	c := &Client{client: httpClient, BaseURL: baseURL}
+	if o.client == nil {
+		o.client = http.DefaultClient
+	}
+	if o.baseURL == "" {
+		o.baseURL = defaultURL
+	}
+	baseURL, _ := url.Parse(o.baseURL)
+
+	c := &Client{client: o.client, BaseURL: baseURL}
 	c.Parkings = &ParkingsService{client: c}
 	c.Authorization = &AuthorizeService{client: c}
 	c.Profile = &ProfileService{client: c}

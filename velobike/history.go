@@ -10,7 +10,7 @@ type HistoryService struct {
 // History describes the body of ride/history method response.
 type History struct {
 	Items          []HistoryItem `json:"Items,omitempty"`
-	TotalRidesTime *time.Time    `json:"TotalRidesTime,omitempty"`
+	TotalRidesTime *string       `json:"TotalRidesTime,omitempty"`
 }
 
 // HistoryItem describes part of body responsible for a single ride.
